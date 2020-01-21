@@ -1,7 +1,7 @@
 const muffin = {
     id: 'muffin',
     name: 'blueberry muffin',
-    img: 'muffin.png',
+    image: 'muffin.png',
     description: 'delicious breakfast snack, the top is the best part',
     category: 'breakfast',
     price: 4.00,
@@ -10,7 +10,7 @@ const muffin = {
 const croissant = {
     id: 'croissant',
     name: 'croissant',
-    img: 'croissant.png',
+    image: 'croissant.png',
     description: 'flakey and buttery, loved by the french',
     category: 'breakfast',
     price: 3.00,
@@ -19,7 +19,7 @@ const croissant = {
 const scone = {
     id: 'scone',
     name: 'scone',
-    img: 'scone.png',
+    image: 'scone.png',
     description: 'dense breakfast of the English',
     category: 'breakfast',
     price: 4.00,
@@ -28,7 +28,7 @@ const scone = {
 const pie = {
     id: 'pie',
     name: 'apple pie',
-    img: 'apple.png',
+    image: 'apple.png',
     description: 'american classic',
     category: 'dessert',
     price: 14.00,
@@ -37,7 +37,7 @@ const pie = {
 const cheesecake = {
     id: 'cheesecake',
     name: 'cheesecake',
-    img: 'cheesecake.png'
+    image: 'cheesecake.png'
     description: 'entire factories are devoted to these'
     category: 'dessert',
     price: 16.00,
@@ -46,7 +46,7 @@ const cheesecake = {
 const cupcake = {
     id: 'cupcake',
     name: 'cupcake',
-    img: 'cupcake.png'
+    image: 'cupcake.png'
     description: 'sad little cakes',
     category: 'dessert',
     price: 4.00,
