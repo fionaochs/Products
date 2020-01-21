@@ -16,6 +16,7 @@ function renderBakedGoods(bakedGoods){
     p.className = 'price';
 
     const usd = '$' + bakedGoods.price.toFixed(2);
+    //toFixed returns string of bakedGoods.price with two decimal places
     p.textContent = usd;
 
     const button = document.createElement('button');

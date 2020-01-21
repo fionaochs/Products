@@ -6,7 +6,7 @@ const muffin = {
     category: 'breakfast',
     price: 4.00,
     cost: 1.50
-}
+};
 const croissant = {
     id: 'croissant',
     name: 'croissant',
@@ -37,8 +37,8 @@ const pie = {
 const cheesecake = {
     id: 'cheesecake',
     name: 'cheesecake',
-    image: 'cheesecake.png'
-    description: 'entire factories are devoted to these'
+    image: 'cheesecake.png',
+    description: 'entire factories are devoted to these',
     category: 'dessert',
     price: 16.00,
     cost: 8.00
@@ -46,7 +46,7 @@ const cheesecake = {
 const cupcake = {
     id: 'cupcake',
     name: 'cupcake',
-    image: 'cupcake.png'
+    image: 'cupcake.png',
     description: 'sad little cakes',
     category: 'dessert',
     price: 4.00,
