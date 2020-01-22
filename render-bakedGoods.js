@@ -8,7 +8,7 @@ function renderBakedGoods(bakedGoods){
     li.appendChild(h3);
 
     const img = document.createElement('img');
-    img.src = './imgs' + bakedGoods.image;
+    img.src = '../assets/' + bakedGoods.image;
     img.alt = bakedGoods.name + ' image';
     li.appendChild(img);
 

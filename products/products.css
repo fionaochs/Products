@@ -3,25 +3,26 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #bakedGoods li {
     list-style: none;
     position: relative;
     background: white;
-    border: 1px solid #aaa;
+    border: 2px solid rgb(124, 186, 240);
     border-radius: 5px;
-    width: 100px;
-    height: 150px;
+    width: 120px;
+    height: 200px;
     margin-right: 5px;
     margin-bottom: 5px;
     text-align: center;
-    box-shadow: 1px 1px 2px #ccc;
+    box-shadow: 1px 1px 2px rgb(110, 141, 207);
     transition: transform 200ms ease-in-out;
 }
 
 #bakedGoods li:hover {
-    box-shadow: 2px 2px 3px #bbb;
+    box-shadow: 2px 2px 3px rgb(110, 141, 207);
     transform: translate3d(-1px, -1px, 0);
 }
 
@@ -51,6 +52,6 @@
     transition: color 200ms ease-in-out;
 }
 .price button:hover {
-    background: #aaa;
+    background: teal;
     color: white;
 }

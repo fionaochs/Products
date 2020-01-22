@@ -28,7 +28,7 @@ const scone = {
 const pie = {
     id: 'pie',
     name: 'apple pie',
-    image: 'apple.png',
+    image: 'pie.png',
     description: 'american classic',
     category: 'dessert',
     price: 14.00,
