@@ -17,13 +17,17 @@
     margin-right: 5px;
     margin-bottom: 5px;
     text-align: center;
-    box-shadow: 1px 1px 2px rgb(110, 141, 207);
+    box-shadow: 2px 2px 2px rgb(110, 141, 207);
     transition: transform 200ms ease-in-out;
+
+}
+#buy{
+    font-size: 35px;
 }
 
 #bakedGoods li:hover {
     box-shadow: 2px 2px 3px rgb(110, 141, 207);
-    transform: translate3d(-1px, -1px, 0);
+    transform: translate3d(-2px, -2px, 0);
 }
 
 #bakedGoods li h3 {
@@ -34,6 +38,7 @@
 #bakedGoods li img {
     width: 70%;
     margin-top: 10px;
+    
 }
 
 .price {
@@ -58,24 +63,30 @@
 #pieid{
     height: 100px;
     width: 100px;
+    filter: grayscale(100%);
 }
 #muffinid{
     height: 100px;
     width: 100px;
+    filter: grayscale(100%);
 }
 #croissantid{
     height: 100px;
     width: 100px;
+    filter: grayscale(100%);
 }
 #sconeid{
     height: 70px;
     width: 100px;
+    filter: grayscale(100%);
 }
 #cupcakeid{
     height: 100px;
     width: 100px;
+    filter: grayscale(100%);
 }
 #cheesecakeid{
     height: 80px;
     width: 100px;
+    filter: grayscale(100%);
 }

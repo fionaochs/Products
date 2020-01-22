@@ -1,6 +1,6 @@
 const muffin = {
     id: 'muffin',
-    name: 'blueberry muffin',
+    name: 'Blueberry Muffin',
     img: '../assets/muffin.png',
     description: 'delicious breakfast snack, the top is the best part',
     category: 'breakfast',
@@ -9,7 +9,7 @@ const muffin = {
 };
 const croissant = {
     id: 'croissant',
-    name: 'croissant',
+    name: 'Croissant',
     img: '../assets/croissant.png',
     description: 'flakey and buttery, loved by the French',
     category: 'breakfast',
@@ -18,7 +18,7 @@ const croissant = {
 };
 const scone = {
     id: 'scone',
-    name: 'scone',
+    name: 'Scone',
     img: '../assets/scone.png',
     description: 'dense breakfast of the English',
     category: 'breakfast',
@@ -27,7 +27,7 @@ const scone = {
 };
 const pie = {
     id: 'pie',
-    name: 'apple pie',
+    name: 'Apple Pie',
     img: '../assets/pie.png',
     description: 'american classic',
     category: 'dessert',
@@ -36,7 +36,7 @@ const pie = {
 };
 const cheesecake = {
     id: 'cheesecake',
-    name: 'cheesecake',
+    name: 'Cheesecake',
     img: '../assets/cheesecake.png',
     description: 'entire factories are devoted to these',
     category: 'dessert',
@@ -45,7 +45,7 @@ const cheesecake = {
 };
 const cupcake = {
     id: 'cupcake',
-    name: 'cupcake',
+    name: 'Cupcake',
     img: '../assets/cupcake.png',
     description: 'sad little cakes',
     category: 'dessert',
