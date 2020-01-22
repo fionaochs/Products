@@ -12,12 +12,12 @@
     background: white;
     border: 2px solid rgb(124, 186, 240);
     border-radius: 5px;
-    width: 120px;
-    height: 200px;
+    width: 200px;
+    height: 250px;
     margin-right: 5px;
     margin-bottom: 5px;
     text-align: center;
-    box-shadow: 2px 2px 2px rgb(110, 141, 207);
+    box-shadow: 2px 3px 5px #3e3cbb;
     transition: transform 200ms ease-in-out;
 
 }
@@ -27,16 +27,16 @@
 
 #bakedGoods li:hover {
     box-shadow: 2px 2px 3px rgb(110, 141, 207);
-    transform: translate3d(-2px, -2px, 0);
+    transform: translate3d(-1px, -4px, 0);
 }
 
 #bakedGoods li h3 {
-    font-size: 1.1rem;
+    font-size: 25px;
     margin: 5px;
 }
 
 #bakedGoods li img {
-    width: 70%;
+    width: 80%;
     margin-top: 10px;
     
 }
@@ -61,26 +61,26 @@
     color: white;
 }
 #pieid{
-    height: 100px;
+    height: 130px;
     filter: grayscale(100%);
 }
 #muffinid{
-    height: 100px;
+    height: 120px;
     filter: grayscale(100%);
 }
 #croissantid{
-    height: 100px;
+    height: 110px;
     filter: grayscale(100%);
 }
 #sconeid{
-    height: 70px;
-    filter: grayscale(100%);
-}
-#cupcakeid{
     height: 100px;
     filter: grayscale(100%);
 }
+#cupcakeid{
+    height: 120px;
+    filter: grayscale(100%);
+}
 #cheesecakeid{
-    height: 80px;
+    height: 110px;
     filter: grayscale(100%);
 }

@@ -1,7 +1,7 @@
-
 * {
     box-sizing: border-box;
     font-family: fantasy;
+    text-decoration: none;
 }
 
 body {
@@ -36,22 +36,33 @@ header, main {
     justify-content: space-evenly;
 }
 
-h2 {
-    font-size: 35px;
+h1 {
+   font-size: 55px;
+  text-shadow: 4px 4px 6px #160369;
+}
+h2{
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #3e3cbb;
 }
 
-.hidden {
-    display: none;
+
+#buy{
+    font-size: 30px;
 }
-
-
 
 .bakeryImg {
-    height: 450px;
-    width: 400px;
+    height: 520px;
+    width: 500px;
     margin-top: -24px;
     position: relative;
+    filter: grayscale(100%);
 }
+
 #buy:hover{
     color: teal;
+    text-decoration: underline;
+}
+button{
+    width: 50px;
+    height: 30px;
 }

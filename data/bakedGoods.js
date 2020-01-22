@@ -10,7 +10,7 @@ const muffin = {
 const croissant = {
     id: 'croissant',
     name: 'Croissant',
-    img: '../assets/croissant.png',
+    img: '../assets/croissant3.png',
     description: 'Flakey and buttery, loved by the French',
     category: 'breakfast',
     price: 3.00,
