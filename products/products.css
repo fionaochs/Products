@@ -32,7 +32,7 @@
 }
 
 #bakedGoods li img {
-    width: 50%;
+    width: 70%;
     margin-top: 10px;
 }
 
@@ -54,4 +54,28 @@
 .price button:hover {
     background: teal;
     color: white;
+}
+#pieid{
+    height: 100px;
+    width: 100px;
+}
+#muffinid{
+    height: 100px;
+    width: 100px;
+}
+#croissantid{
+    height: 100px;
+    width: 100px;
+}
+#sconeid{
+    height: 70px;
+    width: 100px;
+}
+#cupcakeid{
+    height: 100px;
+    width: 100px;
+}
+#cheesecakeid{
+    height: 80px;
+    width: 100px;
 }
