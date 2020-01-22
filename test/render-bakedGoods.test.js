@@ -12,7 +12,7 @@ test('render a baked good', assert => {
         price: 4.00,
         cost: 1.50
     };
-    const expected = '<li class="breakfast" title="delicious breakfast snack, the top is the best part"><h3>blueberry muffin</h3><img src="../assets/muffin.png" alt="blueberry muffin image"><p class="price">$4.00<button value="muffin">Add</button></p></li>';
+    const expected = '<li class="breakfast" title="delicious breakfast snack, the top is the best part"><h3>blueberry muffin</h3><img src="../assets/muffin.png" alt="blueberry muffin image" id="muffinid"><p class="price">$4.00<button value="muffin">Add</button></p></li>';
 
     const dom = renderBakedGoods(muffin);
     const html = dom.outerHTML;

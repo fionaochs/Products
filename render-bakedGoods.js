@@ -10,7 +10,7 @@ function renderBakedGoods(bakedGoods){
     const img = document.createElement('img');
     img.src = bakedGoods.img;
     img.alt = bakedGoods.name + ' image';
-    //img.id = bakedGoods.id + 'id';
+    img.id = bakedGoods.id + 'id';
     li.appendChild(img);
 
     const p = document.createElement('p');
