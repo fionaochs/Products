@@ -62,31 +62,25 @@
 }
 #pieid{
     height: 100px;
-    width: 100px;
     filter: grayscale(100%);
 }
 #muffinid{
     height: 100px;
-    width: 100px;
     filter: grayscale(100%);
 }
 #croissantid{
     height: 100px;
-    width: 100px;
     filter: grayscale(100%);
 }
 #sconeid{
     height: 70px;
-    width: 100px;
     filter: grayscale(100%);
 }
 #cupcakeid{
     height: 100px;
-    width: 100px;
     filter: grayscale(100%);
 }
 #cheesecakeid{
     height: 80px;
-    width: 100px;
     filter: grayscale(100%);
 }
