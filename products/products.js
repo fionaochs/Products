@@ -1,5 +1,5 @@
-import bakedGoods from './bakedGoods.js';
-import renderBakedGoods from './render-bakedGoods.js';
+import bakedGoods from '../data/bakedGoods.js/index.js';
+import renderBakedGoods from '../render-bakedGoods.js';
 
 const list = document.getElementById('bakedGoods');
 

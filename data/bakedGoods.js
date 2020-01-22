@@ -11,7 +11,7 @@ const croissant = {
     id: 'croissant',
     name: 'croissant',
     image: 'croissant.png',
-    description: 'flakey and buttery, loved by the french',
+    description: 'flakey and buttery, loved by the French',
     category: 'breakfast',
     price: 3.00,
     cost: 1.50
