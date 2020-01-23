@@ -33,7 +33,7 @@ test('calculate line total for one good', expect => {
 });
 
 test('calculate total', expect => {
-    const expected = 16.00;
+    const expected = 180.00;
     const total = calcOrderTotal(cart, bakedGoods);
     
     expect.equal(total, expected);

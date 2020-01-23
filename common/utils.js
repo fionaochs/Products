@@ -4,17 +4,13 @@ export function findById(bakedGoods, someId){
         if (selectedGood.id === someId){
             return selectedGood;
         }
-        return null;
     }
+    return null;
 }
 
 export function calcLineItem(quantity, price){
     const amount = quantity * price;
-    return roundCurrency(amount);
-}
-
-export function roundCurrency(amount){
-    Math.round((amount * 100) / 100);
+    return amount;
 }
 
 export function calcOrderTotal(cart, bakedGoods){
@@ -23,9 +19,10 @@ export function calcOrderTotal(cart, bakedGoods){
     for (let i = 0; i < cart.length; i++){
         const cartItem = cart[i];
         const bakedGood = findById(bakedGoods, cartItem.id);
+        console.log(bakedGood);
         const lineTotal = calcLineItem(cartItem.quantity, bakedGood.price);
         orderTotal += lineTotal;
     }
-    return roundCurrency(orderTotal);
+    return orderTotal;
 }
 
