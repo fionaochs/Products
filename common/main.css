@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    font-family: fantasy;
+    text-decoration: none;
+}
+
+body {
+    background: aliceblue;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: teal;
+    color: white; 
+    font-size: 25px;
+}
+
+header nav a {
+    color: white;
+    border: 1px solid white;
+    padding: 3px 8px;
+    transition: color 200ms ease-in;
+}
+
+header nav a:hover {
+    color: rgb(146, 154, 223);
+    border: 1px solid rgb(146, 154, 223);
+}
+
+header, main {
+    padding: 8px;
+    justify-content: space-evenly;
+}
+
+h1 {
+   font-size: 55px;
+  text-shadow: 4px 4px 6px #160369;
+}
+h2{
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #3e3cbb;
+}
+
+
+#buy{
+    font-size: 30px;
+}
+
+.bakeryImg {
+    height: 520px;
+    width: 500px;
+    margin-top: -24px;
+    position: relative;
+    filter: grayscale(100%);
+}
+
+#buy:hover{
+    color: teal;
+    text-decoration: underline;
+}
+button{
+    width: 50px;
+    height: 30px;
+}
