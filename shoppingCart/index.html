@@ -13,7 +13,7 @@
         <h1>Baked Goods Shopping Cart</h1>
     </header>
     
-    <main>
+    <table>
         <thead>
             <tr>
                 <th class="algin-left">Baked Goods</th>
@@ -21,19 +21,21 @@
                 <th>Price</th>
                 <th>Total</th>
             </tr>
-        </thead>  
-        <tbody></tbody>  
+        </thead> 
+        <tbody class="test2"></tbody>
+        <tbody id="test"></tbody>  
+        <!-- //render cart items into tbody -->
         <tfoot>
             <tr>
                 <th></th>
                 <th>Order Total:</th>
-                <th id="orderTotal"></th>
+                <th id="orderTotalCell"></th>
             </tr>
         </tfoot>
         <p class="order">
             <button id="orderButton">Place Order!</button>
         </p>
-    </main>
+    </table>
 
     <script type="module" src="shoppingCart.js"></script>
 </body>

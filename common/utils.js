@@ -19,7 +19,7 @@ export function calcOrderTotal(cart, bakedGoods){
     for (let i = 0; i < cart.length; i++){
         const cartItem = cart[i];
         const bakedGood = findById(bakedGoods, cartItem.id);
-        console.log(bakedGood);
+
         const lineTotal = calcLineItem(cartItem.quantity, bakedGood.price);
         orderTotal += lineTotal;
     }
