@@ -2,7 +2,7 @@ function renderBakedGoods(lineItem, bakedGoods){
     const tr = document.createElement('tr');
 
     const nameCell = document.createElement('td');
-    nameCell.className = 'align left';
+    nameCell.className = 'align-center';
     nameCell.textContent = bakedGoods.name;
     tr.appendChild(nameCell);
 
@@ -12,12 +12,12 @@ function renderBakedGoods(lineItem, bakedGoods){
 
     const priceCell = document.createElement('td');
     nameCell.className = 'line-item-total';
-    priceCell.textContent = lineItem.price;
+    priceCell.textContent = '$' + bakedGoods.price;
     tr.appendChild(priceCell);
 
     const totalCell = document.createElement('td');
     const total = lineItem.quantity * bakedGoods.price;
-    totalCell.textContent = total;
+    totalCell.textContent = '$' + total;
     tr.appendChild(totalCell);
 
     return tr;

@@ -1,7 +1,35 @@
 #orderButton{
     height: 50px;
-    width: 50px;
+    width: 120px;
+    margin-top: 0px;
+    background-color: teal;
+    color: thistle;
+    align-items: flex-start;
+    font-size: 18px;
 }
 main{
     text-align: center;
+}
+table, .order{
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    margin-top: 10px;
+}
+.order{
+    text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+table {
+    border: thin;
+    border: 1px solid rgb(35, 75, 160);
+}
+table th, table td {
+    text-align: center;
+    padding: 10px;
+}
+table tr{
+    font-size: 20px;
 }

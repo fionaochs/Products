@@ -4,11 +4,10 @@ import bakedGoods from '../data/bakedGoods.js';
 import { findById, calcOrderTotal } from '../common/utils.js';
 
 
-const tbody = document.querySelector('.test2');
+const tbody = document.querySelector('.table');
 //select tbody from html
-console.log(tbody);
+
 const orderTotalCell = document.getElementById('orderTotalCell');
-console.log(orderTotalCell);
 //get element for order total
 for (let i = 0; i < bakedGoods.length; i++){
     //loop through the baked goods array
@@ -23,5 +22,5 @@ for (let i = 0; i < bakedGoods.length; i++){
 }
 const orderTotal = calcOrderTotal(cart, bakedGoods);
 //go through our cart and find each baked good id, calculate total by using item quantity and baked good price
-orderTotalCell.textContent = orderTotal;
+orderTotalCell.textContent = '$' + orderTotal;
 //update text of total cell
