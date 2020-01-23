@@ -1,4 +1,4 @@
-export function findById(someId, bakedGoods){
+export function findById(bakedGoods, someId){
     for (let i = 0; i < bakedGoods.length; i++){
         const selectedGood = bakedGoods[i];
         if (selectedGood.id === someId){

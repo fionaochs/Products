@@ -7,11 +7,11 @@ QUnit.module('Utilities');
 
 test('product id gives correct baked good', expect => {
     const id = 'muffin';
-    const expected = 'muffin';
+    const expected = 'Muffin';
 
     const foundBakedGood = findById(bakedGoods, id);
 
-
+    expect.ok(foundBakedGood);
     expect.equal(foundBakedGood.name, expected);
 });
 
