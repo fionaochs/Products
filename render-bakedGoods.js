@@ -23,6 +23,13 @@ function renderBakedGoods(bakedGoods){
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = bakedGoods.id;
+
+    button.addEventListener('click', () => {
+
+
+        
+
+    });
     p.appendChild(button);
 
     li.appendChild(p);
