@@ -4,10 +4,11 @@ function renderBakedGoods(bakedGoods){
     const li = document.createElement('li');
     li.className = bakedGoods.category;
     li.title = bakedGoods.description;
-
+//create list item with baked good info
     const h3 = document.createElement('h3');
     h3.textContent = bakedGoods.name;
     li.appendChild(h3);
+//updat li with h3
 
     const img = document.createElement('img');
     img.src = bakedGoods.img;
@@ -25,21 +26,26 @@ function renderBakedGoods(bakedGoods){
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = bakedGoods.id;
+    //create add button on baked good with value 'muffin'
+    //button on products page updates local storage
+    //shoppingCart.js reads updated JSON
 
     button.addEventListener('click', () => {
         let possiblyCartGood = localStorage.getItem('cart');
+        //initiate cart and see whats there
+        //schrodinger's cart
         //grab local storage of good possibly in cart
         let cart;
         //set cart
         if (possiblyCartGood){
             //if something in cart...
             cart = JSON.parse(possiblyCartGood);
-            //return array of object
+            //return array of object of baked good
         } else {
             cart = [];
             //if nothing in cart return empty array
         }
-        
+
         let bakedGoodInCart = findById(cart, bakedGoods.id);
         //find baked good by matching id to cart id
         
@@ -49,7 +55,6 @@ function renderBakedGoods(bakedGoods){
                 id: bakedGoods.id,
                 quantity: 1
             });
-            // cart.push(bakedGoodInCart);
             //add the baked good to the cart and increase quantity
         } 
         else {
@@ -60,6 +65,7 @@ function renderBakedGoods(bakedGoods){
         //update local storage with string of cart
         const newCart = JSON.stringify(cart);
         localStorage.setItem('cart', newCart);
+        // key: 'cart', value: newCart
         //set value of cart in local storage with updated newCart value of strings with baked goods
 
         alert('You added one ' + bakedGoods.name + ' to your cart');
