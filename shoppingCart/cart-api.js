@@ -1,13 +1,20 @@
 export function getCart(){
     const possiblyCartGood = localStorage.getItem('cart');
-//get local storage of possibly cart item
+    //get local storage of possibly cart item
+    //initiate cart and see whats there
+    //schrodinger's cart
+    //grab local storage of good possibly in cart
     let cart;
+    //set cart
     if (possiblyCartGood){
+        //if something in cart...
         cart = JSON.parse(possiblyCartGood);
-        //array of baked goods
+        
+        //return array of object of baked good
     }
     else {
         cart = [];
+        //if nothing in cart return empty array
     }
     return cart;
 
@@ -15,21 +22,7 @@ export function getCart(){
 
 
 export function addToCart(findById, bakedGoods){
-    let possiblyCartGood = localStorage.getItem('cart');
-        //initiate cart and see whats there
-        //schrodinger's cart
-        //grab local storage of good possibly in cart
-    let cart;
-        //set cart
-    if (possiblyCartGood){
-            //if something in cart...
-        cart = JSON.parse(possiblyCartGood);
-            //return array of object of baked good
-    } else {
-        cart = [];
-            //if nothing in cart return empty array
-    }
-
+    const cart = getCart();
     let bakedGoodInCart = findById(cart, bakedGoods.id);
         //find baked good by matching id to cart id
         
