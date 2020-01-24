@@ -1,4 +1,3 @@
-
 export function getCart(){
     const possiblyCartGood = localStorage.getItem('cart');
 //get local storage of possibly cart item
@@ -13,7 +12,6 @@ export function getCart(){
     return cart;
 
 }
- 
 
 
 export function addToCart(findById, bakedGoods){
@@ -33,9 +31,8 @@ export function addToCart(findById, bakedGoods){
     }
 
     let bakedGoodInCart = findById(cart, bakedGoods.id);
-    console.log(bakedGoods);
         //find baked good by matching id to cart id
-        console.log(bakedGoodInCart);
+        
     if (!bakedGoodInCart){
             //if nothing in cart
         cart.push({
@@ -58,7 +55,6 @@ export function addToCart(findById, bakedGoods){
     alert('You added one ' + bakedGoods.name + ' to your cart');
 
 }
-
 
 
 export function clearCart(cart){

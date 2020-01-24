@@ -14,17 +14,6 @@ const orderTotalCell = document.getElementById('orderTotalCell');
 const orderButton = document.getElementById('orderButton');
 
 const cart = getCart();
-// addToCart(findById, bakedGoods);
-// const possiblyCartGood = localStorage.getItem('cart');
-// //get local storage of possibly cart item
-// let cart;
-// if (possiblyCartGood){
-//     cart = JSON.parse(possiblyCartGood);
-//     //array of baked goods
-// }
-// else {
-//     cart = [];
-// }
 
 for (let i = 0; i < cart.length; i++){
     //loop through the baked goods array

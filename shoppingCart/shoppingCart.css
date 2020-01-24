@@ -10,14 +10,20 @@
 main{
     text-align: center;
 }
-table, .order{
+table, .order, #productsReturn{
     width: 100%;
     max-width: 750px;
     margin: auto;
     margin-top: 10px;
+    justify-content: space-between;
 }
 .order{
     text-align: right;
+}
+.order button:hover {
+    background: teal;
+    color: white;
+    cursor: pointer;
 }
 .align-center{
     text-align: center;
@@ -32,4 +38,16 @@ table th, table td {
 }
 table tr{
     font-size: 20px;
+}
+#productsReturn{
+    height: 80px;
+    width: 120px;
+    margin-top: 0px;
+    background-color: teal;
+    color: thistle;
+    align-items: baseline;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 10px;
+    margin-right: 50px;
 }
