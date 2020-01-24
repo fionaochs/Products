@@ -1,7 +1,8 @@
 import renderBakedGoods from './render-line-items.js';
 // import cart from '../data/cart.js';
 import bakedGoods from '../data/bakedGoods.js';
-import { findById, calcOrderTotal } from '../common/utils.js';
+import { calcOrderTotal, findById } from '../common/utils.js';
+import { clearCart, getCart } from './cart-api.js';
 
 
 const tbody = document.querySelector('.table');
@@ -12,22 +13,25 @@ const orderTotalCell = document.getElementById('orderTotalCell');
 
 const orderButton = document.getElementById('orderButton');
 
-const possiblyCartGood = localStorage.getItem('cart');
-//get local storage of possibly cart item
-let cart;
-if (possiblyCartGood){
-    cart = JSON.parse(possiblyCartGood);
-    //array of baked goods
-}
-else {
-    cart = [];
-}
+const cart = getCart();
+// addToCart(findById, bakedGoods);
+// const possiblyCartGood = localStorage.getItem('cart');
+// //get local storage of possibly cart item
+// let cart;
+// if (possiblyCartGood){
+//     cart = JSON.parse(possiblyCartGood);
+//     //array of baked goods
+// }
+// else {
+//     cart = [];
+// }
 
 for (let i = 0; i < cart.length; i++){
     //loop through the baked goods array
     const possiblyCartGood = cart[i];
     //set each item in the cart to line item
     const selectedGood = findById(bakedGoods, possiblyCartGood.id);
+   
     //selected good is comparing baked goods list with line items id
     const dom = renderBakedGoods(possiblyCartGood, selectedGood);
     //render info and store in dom variable, use cart[i] and the baked good
@@ -45,10 +49,6 @@ if (cart.length === 0){
 }
 else {
     orderButton.addEventListener('click', () => {
-        //on click clear local storage of cart
-        localStorage.clear('cart');
-        alert('You placed your order of' + JSON.stringify(cart));
-        window.location = '../';
-
+        clearCart(cart);
     });
 }
