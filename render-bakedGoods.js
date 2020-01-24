@@ -1,4 +1,4 @@
-import { findById } from "./common/utils";
+import { findById } from './common/utils.js';
 
 function renderBakedGoods(bakedGoods){
     const li = document.createElement('li');
@@ -39,15 +39,17 @@ function renderBakedGoods(bakedGoods){
             cart = [];
             //if nothing in cart return empty array
         }
+        
         let bakedGoodInCart = findById(cart, bakedGoods.id);
         //find baked good by matching id to cart id
         
         if (!bakedGoodInCart){
             //if nothing in cart
-            cart.push {
+            cart.push({
                 id: bakedGoods.id,
                 quantity: 1
-            };
+            });
+            // cart.push(bakedGoodInCart);
             //add the baked good to the cart and increase quantity
         } 
         else {
@@ -60,10 +62,10 @@ function renderBakedGoods(bakedGoods){
         localStorage.setItem('cart', newCart);
         //set value of cart in local storage with updated newCart value of strings with baked goods
 
-        alert('You added one' + bakedGoods.name + 'to the cart');
+        alert('You added one ' + bakedGoods.name + ' to your cart');
 
     });
-    
+
     p.appendChild(button);
 
     li.appendChild(p);
