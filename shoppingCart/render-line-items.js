@@ -28,3 +28,4 @@ function renderBakedGoods(lineItem, bakedGoods){
 }
 
 export default renderBakedGoods;
+//function for '$' + cleans code

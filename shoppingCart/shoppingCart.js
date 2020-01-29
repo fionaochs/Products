@@ -1,7 +1,7 @@
 import renderBakedGoods from './render-line-items.js';
 // import cart from '../data/cart.js';
-import bakedGoods from '../data/bakedGoods.js';
-import { calcOrderTotal, findById } from '../common/utils.js';
+// import bakedGoods from '../data/bakedGoods.js';
+import { calcOrderTotal, findById, getBakedGoods } from '../common/utils.js';
 import { clearCart, getCart } from './cart-api.js';
 
 
@@ -12,6 +12,8 @@ const orderTotalCell = document.getElementById('orderTotalCell');
 //get element for order total
 
 const orderButton = document.getElementById('orderButton');
+
+const bakedGoods = getBakedGoods();
 
 const cart = getCart();
 
@@ -27,6 +29,9 @@ for (let i = 0; i < cart.length; i++){
     tbody.appendChild(dom);
     //append, add the changes to the tbody in html
 }
+// OR cart.forEach(possiblyCartGood => {})
+
+
 const orderTotal = calcOrderTotal(cart, bakedGoods);
 //go through our cart and find each baked good id, calculate total by using item quantity and baked good price
 orderTotalCell.textContent = '$' + orderTotal;

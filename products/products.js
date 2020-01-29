@@ -1,6 +1,8 @@
-import bakedGoods from '../data/bakedGoods.js';
-import renderBakedGoods from '../render-bakedGoods.js';
+// import bakedGoods from '../data/bakedGoods.js';
+import { getBakedGoods } from '../common/utils.js';
+import renderBakedGoods from '../add-product/render-baked-goods.js';
 
+const bakedGoods = getBakedGoods();
 const list = document.getElementById('bakedGoods');
 //id tag on products, html page
 

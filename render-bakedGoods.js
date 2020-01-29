@@ -31,10 +31,6 @@ function renderBakedGoods(bakedGoods){
     //button on products page updates local storage
     //shoppingCart.js reads updated JSON
 
-    button.addEventListener('click', () => {
-        addToCart(findById, bakedGoods);
-        
-    });
 
     p.appendChild(button);
 

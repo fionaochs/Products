@@ -1,0 +1,141 @@
+#bakedGoods {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bakedGoods li {
+    list-style: none;
+    position: relative;
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 100px;
+    height: 150px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 2px #ccc;
+    transition: transform 200ms ease-in-out;
+}
+
+#bakedGoods li:hover {
+    box-shadow: 2px 2px 3px #bbb;
+    transform: translate3d(-1px, -1px, 0);
+}
+
+#bakedGoods li h3 {
+    font-size: 1.1rem;
+    margin: 5px;
+}
+
+#bakedGoods li img {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#add button {
+    transition: color 200ms ease-in-out;
+}
+#add button:hover {
+    background: #aaa;
+    color: white;
+}
+
+#bakedGoods {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#bakedGoods li {
+    list-style: none;
+    position: relative;
+    background: white;
+    border: 2px solid rgb(124, 186, 240);
+    border-radius: 5px;
+    width: 200px;
+    height: 250px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    box-shadow: 2px 3px 5px #3e3cbb;
+    transition: transform 200ms ease-in-out;
+
+}
+#buy{
+    font-size: 35px;
+}
+
+#bakedGoods li:hover {
+    box-shadow: 2px 2px 3px rgb(110, 141, 207);
+    transform: translate3d(-1px, -4px, 0);
+}
+
+#bakedGoods li h3 {
+    font-size: 25px;
+    margin: 5px;
+}
+
+#bakedGoods li img {
+    width: 80%;
+    margin-top: 10px;
+    
+}
+
+.price {
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price button {
+    transition: color 200ms ease-in-out;
+}
+.price button:hover {
+    background: teal;
+    color: white;
+}
+#pieid{
+    height: 130px;
+    filter: grayscale(100%);
+}
+#muffinid{
+    height: 120px;
+    filter: grayscale(100%);
+}
+#croissantid{
+    height: 110px;
+    filter: grayscale(100%);
+}
+#sconeid{
+    height: 100px;
+    filter: grayscale(100%);
+}
+#cupcakeid{
+    height: 120px;
+    filter: grayscale(100%);
+}
+#cheesecakeid{
+    height: 110px;
+    filter: grayscale(100%);
+}
