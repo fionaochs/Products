@@ -1,3 +1,5 @@
+import bakedGoods from '../data/bakedGoods.js';
+
 export function findById(bakedGoods, someId){
     for (let i = 0; i < bakedGoods.length; i++){
         const selectedGood = bakedGoods[i];
@@ -24,5 +26,25 @@ export function calcOrderTotal(cart, bakedGoods){
         orderTotal += lineTotal;
     }
     return orderTotal;
+}
+
+
+function seedProductsIntoLocalStorage(){
+    const productsAlreadyExist = localStorage.getItem('bakedGoods');
+
+    if (!productsAlreadyExist){
+        const stringyBakedGoods = JSON.stringify(bakedGoods);
+        localStorage.setItem('bakedGoods', stringyBakedGoods);
+    }
+
+}
+
+export function getBakedGoods(){
+    seedProductsIntoLocalStorage();
+    
+    const bakedGoods = localStorage.getItem('bakedGoods');
+    const parsedBakedGoods = JSON.parse(bakedGoods);
+
+    return parsedBakedGoods;
 }
 

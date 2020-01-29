@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Baked Good</title>
+    <link rel="stylesheet" href="../common/main.css">
+    <link rel="stylesheet" href="./add-product.css">
+
+    <title>Add Baked Good</title>
+</head>
+<body>
+    <header>
+        <h1>Add Product to the Bake Shop</h1>
+        <nav>
+            <a href="../">Home</a>
+            <a href="../shoppingCart/index.html">Buy Baked Goods</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Baked Goods</h2>
+        <ul id="bakedGoods"></ul>
+        <form>
+            <label>
+                <span>Name</span>
+                <input type="text" name="name">
+            </label>    
+            <label>
+                <span>Id</span>
+                <input type="text" name="id">
+            </label>
+            <label>
+                <span>Price</span>
+                <input type="text" name="price">
+            </label>
+            <label>
+                <span>Image</span>
+                <input type="text" name="image">
+            </label>
+        </form>
+        <p class="add">
+            <button id="addButton">Add Baked Good
+            </button>
+        </p>
+
+        <h2>Existing Baked Goods</h2>
+        <ul id="bakedGoods"></ul>
+    </main>
+
+    <script src="./add-product.js" type="module"></script>
+</body>
+</html>
